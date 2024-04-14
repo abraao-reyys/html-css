@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Oswald&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fonts/idroid.otf);
+}
+
+body {
+    background-color: #abf5cb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header#principal {
+    background: linear-gradient(to bottom, #3BD57F, #1A5C38 76%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 150px;
+}
+
+header#principal > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    padding: 8px 0px;
+}
+
+header#principal > p {
+    color: rgb(204, 204, 204);
+    width: 360px;
+    margin: auto;
+    padding-bottom: 8px;
+    text-indent: 0px;
+    text-align: center;
+}
+
+header#principal > nav {
+    background-color: #1A5B37;
+    font-weight: bold;
+    height: 30px;
+}
+
+header#principal > nav > ul {
+    position: absolute;
+    padding-top: 8px;
+}
+
+header#principal nav > ul > li {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+header#principal nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+header#principal nav > ul > li:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 0px 25px;
+}
+
+p {
+    text-indent: 40px;
+    text-align: justify;
+}
+
+h1.assunto {
+    color: #226e44;
+    font-size: 1.8em;
+}
+
+.titulo {
+    font-family: 'idroid', sans-serif;
+    color: #279257;
+    margin: 7px 0px;
+}
+
+.image {
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.video {
+    background-color: #1A5B37;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 610px;
+}
+
+section.curiosidade {
+    background-color: #abf5cb;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section.titulo-curiosidade {
+    background-color: #2FA866;
+    color: white;
+    margin-top: 10px;
+    height: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+section.titulo-curiosidade > header > h1 {
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+.lista-curiosidade {
+    list-style-type: "✔";
+    width: 294px;
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+article.final {
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #1A5B37;
+    color: white;
+    margin-top: 15px;
+}
+
+footer > p {
+    text-align: center;
+    text-indent: 0px;
+}
+
+.destaque {
+    color: #268650;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.fundo {
+    background: linear-gradient(to right, #88e7b2 20%, white);
+}

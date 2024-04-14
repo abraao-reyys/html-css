@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(7, 7, 7);
+}
+
+.title {
+color: white;
+font-family: Rubik Doodle Shadow;
+font-size: 35px;
+text-align: center;
+}
+
+.title-2 {
+    color: white;
+    text-align: center;
+}
+
+.text {
+    color: white;
+    text-align: center;
+}
+
+.video {
+    margin: 0 auto;
+    display: block;
+}
+
+.img {
+    margin: 0 auto;
+    display: block;
+}
+
+.thumb {
+    margin: 0 auto;
+    display: block;
+}
