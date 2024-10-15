@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Josefin Sans;
+    src: url(font/JosefinSans-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(font/inter.ttf) format(truetype);
+}
+
+:root {
+    --corb: #000000;
+    --corw: #FFFFFF;
+    --cor0: #440100;
+    --cor1: #880200;
+}
+
+body {
+    background-color: var(--cor0);
+    color: var(--corw);
+}
+
+h1, h2, h3 {
+    font-family: Josefin Sans;
+    font-weight: regular;
+    margin: 15px 0px;
+}
+
+header {
+    background-color: var(--cor1);
+}
+
+header div#header {
+    display: flex;
+}
+
+div#header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 520px;
+    font-size: 40px;
+}
+
+div#header section img {
+    max-width: 71px;
+    margin: 5px 5px 5px 20px;
+}
+
+div#header section h1 {
+    font-family: Josefin Sans;
+    font-weight: regular;
+    margin: 10px 0px 0px 0px;
+}
+
+div#header nav {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+div#header nav ul li {
+    display: inline-block;
+    background-color: var(--corw);
+    padding: 17px 50px;
+    margin: 0px 24px 0px 0px;
+    border-radius: 25px;
+}
+
+div#header > nav > ul > li > a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    margin: 0px;
+}
+
+main div#seta-upper {
+    position: fixed;
+    bottom: 20px;
+    right: 48px;
+    background-color: var(--corw);
+    color: white;
+    padding: 10px;
+    border-radius: 80px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+main {
+    background-color: var(--corw);
+    color: var(--corb);
+    margin: auto;
+    padding: 25px 70px;
+    max-width: 1400px;
+}
+
+main h2 {
+    color: var(--corw);
+    font-weight: 600;
+    background-image: linear-gradient(to right,#880200fa, transparent);
+    padding: 2px 0px 2px 5px;
+    border-radius: 3px;
+}
+
+main p {
+    font-family: Inter;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+main article > h1 {
+    color: var(--cor1);
+    font-size: 38px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+section#inicio aside {
+    background-color: var(--cor1);
+    color: var(--corw);
+    margin: 20px 0px;
+    padding: 22px;
+    border-radius: 25px;
+}
+
+section#inicio > aside > h1, p {
+    display: inline-block;
+    margin: 0;
+}
+
+section#inicio aside p {
+    margin-left: -10px;
+    text-align: center;
+}
+
+section#poderes ul {
+    margin: 10px 0px 0px 30px;
+    list-style-type: square;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor1);
+    padding-top: 5px;
+}
+
+footer ul {
+    padding: 5px 0px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0px 10px;    
+}
+
+footer ul li a {
+    color: var(--corw);
+}
