@@ -1,4 +1,8 @@
 # html-css
- Curso de HTML5 e CSS3 do CursoemVideo
+<h1>Curso de HTML5 e CSS3 do CursoemVideo</h1>
 
-<p>Confira o <a href="desafios/d010-orientado/android.html" target="_self">Projeto Android</a>, criado com a orientação do Mestre Guanabara, CursoemVideo.</p>
+<h2>Listinha de Projetos</h2>
+<ul>
+ <li><a href="desafios/d010-orientado/android.html" target="_self">Projeto Android</a></li>
+ <li><a href="desafios/d012/index.html" target="_self">Projeto Cordel Moderno</a></li>
+</ul>
