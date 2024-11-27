@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            width: 300px;
+            height: 30px;
+            border: 1px solid black;
+        }
+
+        td {
+            text-indent: 5px;
+        }
+
+        thead, tfoot {
+            color: white;
+            background-color: gray;
+        }
+
+        .number {
+            text-align: right;
+        }
+    </style>
+
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="number">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="number">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="number">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="number">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="number">9 132 078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="number">8 602 885</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="number">7 164 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="number">7 075 181</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td id="result" class="number">210 147 125</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>#cansei</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const numberCells = document.querySelectorAll('tbody .number');
+            let total = 0;
+    
+            numberCells.forEach(cell => {
+                total += parseInt(cell.textContent.replace(/\s/g, ''), 10);
+            });
+
+            document.getElementById('result').textContent = total.toLocaleString('pt-BR');
+        });
+    </script>
+</body>
+</html>
