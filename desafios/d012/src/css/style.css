@@ -15,11 +15,16 @@
     src: url(fonts/PassionOne-Black.ttf);
 }
 
+@font-face {
+    font-family: Merienda;
+    src: url(fonts/Merienda-VariableFont_wght.ttf);
+}
+
 :root {
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font2: 'Passion One R';
     --font3: 'Passion One B';
-    --font4: cursive;
+    --font4: 'Merienda';
 }
 
 body {
@@ -99,7 +104,7 @@ footer {
     background-color: black;
     height: 5vh;
     font-family: var(--font1);
-    font-size: 1.2em;
+    font-size: 2vw;
     display: flex;
     align-items: center;
 }
