@@ -27,8 +27,38 @@
             background-color: gray;
         }
 
+        thead {
+            position: relative;
+        }
+
+        thead  tr th {
+            background-color: gray;
+            position: sticky;
+            top: -1px;
+        }
+
+        caption {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.856);
+            font-size: 1.3em;
+            font-weight: bold;
+            border: 1px solid black;
+            border-bottom: 0px;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(128, 128, 128, 0.164);
+        }
+
         .number {
             text-align: right;
+        }
+
+        div.space {
+            background-color: gray;
+            width: 10px;
+            height: 1000px;
         }
     </style>
 
@@ -37,10 +67,11 @@
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -91,12 +122,13 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td id="result" class="number">210 147 125</td>
             </tr>
         </tfoot>
     </table>
-    <p>#cansei</p>
+    <p>A seguinte 'div' foi criada para testar o comportamento da tabela em meio a um scroll do mouse.</p>
+    <div class="space"></div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const numberCells = document.querySelectorAll('tbody .number');
