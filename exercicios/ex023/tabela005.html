@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: center;
+            padding: 10px 40px;
+        }
+
+        td {
+            padding: 10px 40px 10px 10px;
+        }
+
+        th ,td {
+            border: 1px solid black;
+        }
+    </style>
+
+    <title>Complete Table</title>
+</head>
+<body>
+    <h1>Movie List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Group</th>
+                <th scope="col">Names</th>
+                <th scope="colgroup" colspan="3">Movies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Womans</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Avengers</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Men</th>
+                <td>Bruno Medonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Beleza</td>
+                <td>Ok</td>
+                <td>Ok</td>
+                <td>Ok</td>
+                <td>Ok</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

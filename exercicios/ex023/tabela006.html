@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            color: white;
+            background-color: #707370;
+            font-size: 1.2em;
+            padding: 10px 40px;
+        }
+
+        td {
+            padding: 10px 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+        .discipline {
+            color: black;
+            background-color: white;
+        }
+
+        .average {
+            padding: 0px 10px;
+            text-align: left;
+        }
+
+        .num {
+            text-align: center;
+        }
+
+        .result {
+            color: white;
+            background-color: #707370;
+            font-weight: bold;
+        }
+
+        col.cdiscipline {
+            background-color: greenyellow;
+        }
+
+        col.cscores {
+            background-color: yellow;
+        }
+
+        col.caverage {
+            background-color: red;
+        }
+
+    </style>
+
+    <title>Table Challenges</title>
+</head>
+<body>
+    <h1>Challenges (pt.2)</h1>
+    <table>
+        <colgroup>
+            <col class="carea">
+            <col class="cdiscipline">
+            <col class="cscores">
+            <col class="cscores">
+            <col class="caverage">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Area</th>
+                <th scope="col" rowspan="2">Disciplines</th>
+                <th scope="colgroup" colspan="2">Scores</th>
+                <th scope="col" rowspan="2">Averages</th>
+            </tr>
+            <tr>
+                <th scope="col">Score 1</th>
+                <th scope="col">Score 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4" class="discipline">Exatas</th>
+                <td>Math</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Physical</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Chemical</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="average">Average of Exacts</th>
+                <td class="num result">0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2" class="discipline">Human</th>
+                <td>History</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <td>Geography</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="average">Average of Human</th>
+                <td class="num result">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
