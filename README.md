@@ -1,5 +1,5 @@
 # Curso de HTML5 e CSS3 do CursoemVideo
-<p>Seja bem-vindo (a)! Confira o que há neste <a href="https://abraao-reyys.github.io/html-css/" target="self">respositório</a>:</p>
+<p>Seja bem-vindo (a)! Confira o que há neste <a href="https://abraao-reyys.github.io/html-css/" target="self">repositório</a>:</p>
 <h2>Listinha de Projetos</h2>
 <ul>
  <li><a href="desafios/d010-orientado/android.html" target="_self">Projeto Android</a></li>
