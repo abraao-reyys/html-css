@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            font-family: arial;
+        }
+        form {
+            display: inline-block;
+        }
+        input {
+            height: 20px;
+        }
+        .send-box {
+            text-align: center;
+        }
+    </style>
+
+    <title>Form Test</title>
+</head>
+<body>
+    <h1>Form Test</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="iuser">Username:</label> <br>
+            <input type="text" name="user" id="iuser" required minlength="8" maxlength="20" placeholder="Type your username" autocomplete="username">
+        </p>
+        <p>
+            <label for="ipassword">Password:</label> <br>
+            <input type="password" name="password" id="ipassword" required minlength="8" maxlength="20" placeholder="Type your password" autocomplete="current-password">
+        </p>
+        <p class="send-box">
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>
