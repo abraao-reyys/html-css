@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
-    
+    <h1>Forms Example</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="istate">Select your state</label> <br>
+            <select name="state" id="istate">
+                <option value="">(Choose a option)</option>
+                <optgroup label="North">
+                    <option value="ac">Acre</option>
+                    <option value="ap">Amapá</option>
+                    <option value="am">Amazonas</option>
+                    <option value="pa">Pará</option>
+                    <option value="ro">Rondônia</option>
+                    <option value="rr">Roraima</option>
+                    <option value="to">Tocantins</option>
+                </optgroup>
+                <optgroup label="North East">
+                    <option value="al">Alagoas</option>
+                    <option value="ba">Bahia</option>
+                    <option value="ce">Ceará</option>
+                    <option value="ma">Maranhão</option>
+                    <option value="pb">Paraíba</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="pi">Piauí</option>
+                    <option value="rn">Rio de Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Inform your profession</label>
+            <input type="text" name="prof" id="iprof" list="proflist">
+            <datalist id="proflist">
+               <option>Admin</option>
+               <option>Developer</option>
+               <option>Designer</option>
+               <option>Operator</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
 </body>
 </html>
