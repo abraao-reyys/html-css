@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+    <title>Form</title>
+</head>
+<body>
+    <h1>Forms Example</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sex</legend>
+            <input type="radio" name="sex" id="isexm"> <label for="isexm">Man</label>
+            <input type="radio" name="sex" id="isexf"> <label for="isexf">Woman</label>
+        </fieldset>
+        <fieldset>
+            <legend>Favorite Books</legend>
+            <input type="checkbox" name="option1" id="ioption1"> <label for="ioption1">The War Art</label> <br>
+            <input type="checkbox" name="option2" id="ioption2"> <label for="ioption2">The Warrior's Way</label> <br>
+            <input type="checkbox" name="option3" id="ioption3"> <label for="ioption3">The Book of Five Rings</label> <br>
+            <input type="checkbox" name="option4" id="ioption4"> <label for="ioption4">Understanding Algorithms</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>
