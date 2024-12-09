@@ -4,7 +4,8 @@
 
 body {
     background-image: url(../images/cev-portrait.jpg);
-    background-position: left bottom;
+    background-position: center bottom;
+    background-size: 90vw;
 }
 
 h1 {
