@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Forms Example</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="istate">Select your state</label> <br>
             <select name="state" id="istate">
@@ -42,6 +42,10 @@
                <option>Designer</option>
                <option>Operator</option>
             </datalist>
+        </p>
+        <p>
+            <label for="imes">Type your message:</label> <br>
+            <textarea name="mes" id="imes" cols="30" rows="10"></textarea>
         </p>
         <p>
             <input type="submit" value="Send">
