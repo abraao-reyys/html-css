@@ -31,6 +31,16 @@ main {
     border-radius: 10px;
 }
 
+h1 {
+    color: rgb(62, 93, 102);
+    font-size:1.6em;
+}
+
+p {
+    font-family: monospace;
+    padding: 5px;
+}
+
 img {
     margin: auto;
 }
