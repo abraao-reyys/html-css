@@ -1,3 +1,34 @@
 @charset "UTF-8";
 
 /* Media Query Settings */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /* Tablets */
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+
+    img.phone {display: none;}
+    img.tablet {display: block;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) { /* Computer */
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+
+    img.phone {display: none;}
+    img.pc {display: block;}
+}
+
+@media screen and (min-width: 1441px) {
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
+
+    main {
+        width: 450px;
+    }
+
+    img.phone {display: none;}
+    img.tv {display: block;}
+}

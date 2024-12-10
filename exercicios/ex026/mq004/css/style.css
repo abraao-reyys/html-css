@@ -24,7 +24,7 @@ body {
 main {
     background-color: rgba(255, 255, 255, 0.781);
     text-align: center;
-    width: 80%;
+    width: 350px;
     margin: auto;
     margin-top: 20px;
     padding: 20px;
@@ -34,11 +34,6 @@ main {
 h1 {
     color: rgb(62, 93, 102);
     font-size:1.6em;
-}
-
-p {
-    font-family: monospace;
-    padding: 5px;
 }
 
 img {
