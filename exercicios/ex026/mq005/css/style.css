@@ -27,10 +27,6 @@ header h1 {
     padding: 50px;
 }
 
-ul {
-    display: none;
-}
-
 #menu-box {
     width: 100%;
     background-color: #F2A71B;
@@ -41,18 +37,40 @@ ul {
     width: 48px;
 }
 
+menu ul {
+    color: white;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+}
+
+menu ul li a {
+    color: white;
+    display: block;
+    width: 150px;
+    margin: auto;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+    text-decoration: underline;
+}
+
 main {
     background-color: white;
     text-align: justify;
     height: 80%;
+    padding: 15px 30px;
 }
 
 main h2 {
-    padding: 20px 10px;
+    padding: 20px 0px;
 }
 
 main p {
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 footer {
