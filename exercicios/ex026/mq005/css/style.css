@@ -10,10 +10,12 @@
 
 html, body {
     height: 100vh;
+    width: 100vw;
 }
 
 body {
     background-color: #e7e2c9;
+    overflow-x: hidden;
 }
 
 header {
@@ -22,7 +24,7 @@ header {
 
 header h1 {
     color: white;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
     padding: 50px;
 }
@@ -66,7 +68,7 @@ menu ul a {
 main {
     background-color: white;
     text-align: justify;
-    height: 80%;
+    height: 100%;
     padding: 15px 30px;
 }
 
@@ -89,6 +91,7 @@ footer {
 
 footer p {
     color: white;
+    font-size: 0.7em;
     position: absolute;
     top: 50%;
     left: 50%;

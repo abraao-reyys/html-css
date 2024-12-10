@@ -22,6 +22,10 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
+    header h1 {
+        font-size: 2.5em;
+    }
+
     header div#menu-box {
         display: none;
     }
@@ -57,9 +61,18 @@
         width: 75%;
         margin: auto;
     }
+
+    footer p {
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    header h1 {
+        font-size: 2.5em;
+    }
+    
     header div#menu-box {
         display: none;
     }
@@ -95,10 +108,19 @@
         width: 50%;
         padding: 20px 50px;
         margin: auto;
-    }  
+    }
+
+    footer p {
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 1441px) {
+    
+    header h1 {
+        font-size: 2.5em;
+    }
+
     header div#menu-box {
         display: none;
     }
@@ -134,5 +156,9 @@
         width: 50%;
         padding: 20px 50px;
         margin: auto;
+    }
+
+    footer p {
+        font-size: 1em;
     }
 }
