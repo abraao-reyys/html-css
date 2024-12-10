@@ -58,3 +58,42 @@
         margin: auto;
     }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+    header div#menu-box {
+        display: none;
+    }
+
+    menu#menulist {
+        display: block;
+        background-color: #F2A71B;
+        text-align: center;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.178);
+    }
+
+    menu#menulist ul {
+        display: flex;
+        text-align: center;
+        padding: 6px;
+    }
+
+    menu#menulist a {
+        width: 100%;
+        display: inline-block;
+        margin: auto;
+    }
+
+    menu#menulist ul a li {
+        border-radius: 10px;
+    }
+
+    menu#menulist ul a li:hover {
+        background-color: rgba(255, 255, 255, 0.26);
+    }
+
+    main {
+        width: 50%;
+        padding: 20px 50px;
+        margin: auto;
+    }  
+}
