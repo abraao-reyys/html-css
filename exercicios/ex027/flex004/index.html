@@ -15,7 +15,13 @@
             background-color: lightsalmon;
         }
 
-        div.container:nth-last-of-type(1) {
+        div.height {
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            height: 150px;
+        }
+
+        div.container:nth-of-type(1) {
             justify-content: flex-start; /* lembrando que esse é o padrão */
         }
 
@@ -39,9 +45,23 @@
             justify-content: space-around;
         }
 
-        div.item {
-            padding: 20px 40px;
+        div.container:nth-of-type(7).height {
+            align-items: stretch;/* lembrando que esse é o padrão */
+        }
 
+        div.container:nth-of-type(8).height {
+            align-items: flex-start;
+        }
+
+        div.container:nth-of-type(9).height {
+            align-items: flex-end;
+        }
+
+        div.container:nth-of-type(10).height {
+            align-items: center;
+        }
+
+        div.item {
             border: 1px solid black;
 
             background-color: lightblue;
@@ -122,6 +142,51 @@
         <div class="item">H</div>
     </div>
     
-    <h2><span style="text-decoration: underline;">align-itens</span> propertie</h2>
+    <h2><span style="text-decoration: underline;">align-items</span> propertie</h2>
+    <p>To better visualize this property, we must increase the height of the box.</p>
+    <h3>strech</h3>
+    <div class="container height">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+    <h3>flex-start</h3>
+    <div class="container height">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+    <h3>flex-end</h3>
+    <div class="container height">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+    <h3>center</h3>
+    <div class="container height">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
 </body>
 </html>
