@@ -9,56 +9,18 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        header {
+            text-align: center;
+        }
+
         main {
             max-width: 600px;
+            margin: auto;
         }
 
         code {
             padding: 1px 3px;
             border: 0.5px solid rgba(0, 0, 0, 0.384);
-        }
-
-        div#ex1 {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-flow: row wrap;
-            height: 150px;
-            width: 100%;
-        }
-
-        div.bk {
-            display: flex;
-            width: 145px;
-            background-color: lightgreen;
-        }
-
-        div.bk p {
-            width: 100%;
-            text-align: center;
-        }
-
-        div#ex1 .item {
-            height: 20px;
-            width: 20px;
-            background-color: white;
-            border: 1px solid rgba(0, 0, 0, 0.5);
-        }
-
-        div.bk1 {
-            flex-direction: row;
-        }
-
-        div.bk2 {
-            flex-direction: row-reverse;
-        }
-
-        div.bk3 {
-            flex-direction: column;
-        }
-
-        div.bk4 {
-            flex-direction: column-reverse;
         }
     </style>
 
@@ -83,40 +45,17 @@
                 <li><code>column-reverse</code>, onde os itens são colocados em coluna, de baixo para cima;</li>
             </ul>
             <p>Exemplos na prática:</p>
-            <div id="ex1">
-                <div class="bk bk1">
-                    <div class="item">A</div>
-                    <div class="item">B</div>
-                    <div class="item">C</div>
-                </div>
-                <div class="bk bk2">
-                    <div class="item">A</div>
-                    <div class="item">B</div>
-                    <div class="item">C</div>
-                </div>
-                <div class="bk bk3">
-                    <div class="item">A</div>
-                    <div class="item">B</div>
-                    <div class="item">C</div>
-                </div>
-                <div class="bk bk4">
-                    <div class="item">A</div>
-                    <div class="item">B</div>
-                    <div class="item">C</div>
-                </div>
-                <div class="bk">
-                    <p>(row)</p>
-                </div>
-                <div class="bk">
-                    <p>(row-reverse)</p>
-                </div>
-                <div class="bk">
-                    <p>(column)</p>
-                </div>
-                <div class="bk">
-                    <p>(column-reverse)</p>
-                </div>
-            </div>
+            <!--Adiciona o link do exercício referente-->
+            <p>Trabalhando com <strong>eixos</strong> (axis), nós temos:</p>
+            <ul>
+                <li>O <strong>main-axis</strong>, que é o eixo principal, possuindo dois pontos: o main-start e o main-end;</li>
+                <li>O <strong>cross-axis</strong>, que é o eixo transversal, possuindo dois pontos: o cross-start e o cross-end.</li>
+            </ul>
+            <p>Cada <code>flex-direction</code> tem uma disposição diferente dos eixos.</p>
+            <h2>Aula 03 - Empacotamento e Fluxo no Flexbox CSS</h2>
+            <p>A propriedade <code>flex-wrap</code> é usada no elemento contêiner e serve para o encapsulamento dos itens.</p>
+            <p>Vamos ver o que acontece por padrão quando usamos não definimos um <code>flex-wrap</code>, mas utilizamos o <code>flex-direction</code> como base:</p>
+            <!--Adiciona o link do exercício referente-->
         </article>
     </main>
 </body>
