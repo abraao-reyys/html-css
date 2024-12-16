@@ -22,15 +22,20 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            flex-flow: row wrap;
             height: 150px;
             width: 100%;
-            border: 1px solid black
         }
 
         div.bk {
             display: flex;
-            width: 100px;
+            width: 145px;
             background-color: lightgreen;
+        }
+
+        div.bk p {
+            width: 100%;
+            text-align: center;
         }
 
         div#ex1 .item {
@@ -98,6 +103,18 @@
                     <div class="item">A</div>
                     <div class="item">B</div>
                     <div class="item">C</div>
+                </div>
+                <div class="bk">
+                    <p>(row)</p>
+                </div>
+                <div class="bk">
+                    <p>(row-reverse)</p>
+                </div>
+                <div class="bk">
+                    <p>(column)</p>
+                </div>
+                <div class="bk">
+                    <p>(column-reverse)</p>
                 </div>
             </div>
         </article>
