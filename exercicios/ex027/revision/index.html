@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            max-width: 600px;
+        }
+
+        code {
+            padding: 1px 3px;
+            border: 0.5px solid rgba(0, 0, 0, 0.384);
+        }
+
+        div#ex1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 150px;
+            width: 100%;
+            border: 1px solid black
+        }
+
+        div.bk {
+            display: flex;
+            width: 100px;
+            background-color: lightgreen;
+        }
+
+        div#ex1 .item {
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+
+        div.bk1 {
+            flex-direction: row;
+        }
+
+        div.bk2 {
+            flex-direction: row-reverse;
+        }
+
+        div.bk3 {
+            flex-direction: column;
+        }
+
+        div.bk4 {
+            flex-direction: column-reverse;
+        }
+    </style>
+
+    <title>Testando Conhecimentos</title>
+</head>
+<body>
+    <header>
+        <h1>Resumo/Revisão Geral de Flexbox</h1>
+        <p>Capítulo 27 - Curso em Vídeo - Flexible Boxes</p>
+    </header>
+    <main>
+        <article>
+            <h2>Aula 01 - Primeiro Passos com Flexbox CSS</h2>
+            <p>Visualizando a estrutura das Flexbox, temos dois elementos importates: o pai, que é o contêiner, e o filho, que é o item que está dentro desse contêiner; podemos chamá-los, respectivamente, de <strong>flex-container</strong> e <strong>flex-item</strong>.</p>
+            <p>Para que o Flexbox seja utilizado, declaramos <code>display: flex;</code> na caixa pai.</p>
+            <h2>Aula 2 - Direções e Eixos Flexbox CSS</h2>
+            <p>A propriedade <code>flex-direction</code> diz se iremos trabalhar com linhas ou colunas como o eixo principal. Ela pode ter os seguintes valores:</p>
+            <ul>
+                <li><code>row</code> (valor padrão), onde os itens são colocados em linha, da esquerda para a direita;</li>
+                <li><code>row-reverse</code>, onde os itens são colocados em linha, da direta para esquerda;</li>
+                <li><code>column</code>, onde os itens são colocados em coluna, de cima para baixo;</li>
+                <li><code>column-reverse</code>, onde os itens são colocados em coluna, de baixo para cima;</li>
+            </ul>
+            <p>Exemplos na prática:</p>
+            <div id="ex1">
+                <div class="bk bk1">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+                </div>
+                <div class="bk bk2">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+                </div>
+                <div class="bk bk3">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+                </div>
+                <div class="bk bk4">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
