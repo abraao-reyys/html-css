@@ -22,6 +22,35 @@
             padding: 1px 3px;
             border: 0.5px solid rgba(0, 0, 0, 0.384);
         }
+
+        /* Caixa de Exercícios */
+
+        .exercicebox {
+            display: flex;
+            flex-flow: row wrap;
+            height: 300px;
+            max-width: 100%;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .exerciceitem {
+            display: flex;
+            align-items: flex-start;
+            height: 150px;
+            width: 25%;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .exerciceitem div {
+            background-color: lightgreen;
+            border: 1px solid black;
+        }
+
+        .largeitems div {
+            padding: 15px;
+        }
     </style>
 
     <title>Testando Conhecimentos</title>
@@ -45,7 +74,32 @@
                 <li><code>column-reverse</code>, onde os itens são colocados em coluna, de baixo para cima;</li>
             </ul>
             <p>Exemplos na prática:</p>
-            <!--Adiciona o link do exercício referente-->
+            <div class="exercicebox">
+                <div class="exerciceitem" style="flex-direction: row;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <div class="exerciceitem" style="flex-direction: row-reverse;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <div class="exerciceitem" style="flex-direction: column;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <div class="exerciceitem" style="flex-direction: column-reverse;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <div class="exerciceitem">Row</div>
+                <div class="exerciceitem">Row-reverse</div>
+                <div class="exerciceitem">Column</div>
+                <div class="exerciceitem">Column-reverse</div>
+            </div>
             <p>Trabalhando com <strong>eixos</strong> (axis), nós temos:</p>
             <ul>
                 <li>O <strong>main-axis</strong>, que é o eixo principal, possuindo dois pontos: o main-start e o main-end;</li>
@@ -55,7 +109,42 @@
             <h2>Aula 03 - Empacotamento e Fluxo no Flexbox CSS</h2>
             <p>A propriedade <code>flex-wrap</code> é usada no elemento contêiner e serve para o encapsulamento dos itens.</p>
             <p>Vamos ver o que acontece por padrão quando usamos não definimos um <code>flex-wrap</code>, mas utilizamos o <code>flex-direction</code> como base:</p>
-            <!--Adiciona o link do exercício referente-->
+            <div class="exercicebox">
+                <div class="exerciceitem largeitems" style="flex-wrap: nowrap; width: 30%;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <div class="exerciceitem largeitems" style="flex-wrap: wrap; width: 30%;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <div class="exerciceitem largeitems" style="flex-wrap: wrap-reverse; width: 30%;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <div class="exerciceitem" style="width: 30%;">Nowrap (padrão)</div>
+                <div class="exerciceitem" style="width: 30%;">Wrap</div>
+                <div class="exerciceitem" style="width: 30%;">Wrap-reverse</div>
+            </div>
+            <p>Quando não definimos, temos por padrão a propriedade <code>flex-wrap</code> com o valor <code>nowrap</code>; ou seja, para não encapasular. Quando 'apertamos' essa caixa, ela aperta os itens. Obs.: o tamanho de cada item vai depender muito do que ele seja; a não ser que você tenha definido previamente.</p>
+            <p>O valor <code>wrap</code> fará com que haja uma quebra para que o item continue com seu mesmo tamanho, mas dentro do contêiner. Ele sempre irá quebrar na direção do cross-axis.</p>
+            <p>O valor <code>wrap-reverse</code> fará com que a quebra dos itens seja para cima.</p>
+            <p>A propriedade <code>flex-flow</code> é um shorthand que une <code>flex-direction</code> e <code>flex-wrap</code>. Exemplo: <code>flex-flow: row nowrap;</code>.</p>
+            <p>Quando você utiliza um <code>flex-wrap</code> e deixa os itens com um <code>flex: auto;</code>, eles começam a quebrar quando dá o tamanho do conteúdo dentro dos itens.</p>
+            <h2>Aula 04 - Alinhamento nos Eixos Flexbox</h2>
+            <p>A propriedade <code>justify-content</code> faz o alinhamento em relação ao main-axis:</p>
+            <ul>
+                <li>Com o valor <code>flex-start</code>, o primeiro item fica grudado no main-start;</li>
+                <li>Com o valor <code>flex-end</code>, o último item fica grudado no main-end;</li>
+                <li>Com o valor <code>center</code>, todos os itens ficam centralizados de acordo com o main-axis na caixa;</li>
+                <li>Com o valor <code>space-between</code>, ele vai grudar o primeiro item no main-start, o último item no main-end e os outros ficam divididos no meio com espaços iguais de distância;</li>
+                <li>Com o valor <code>space-evelyn</code>, esses mesmos 3 itens dentro da caixa ficarão separados pela mesma distância de um para outro e a mesma distância para o main-start e o main-end; ou seja, todos os espaços ficam do mesmo tamanho;</li>
+                <li>Com o valor <code>space-around</code>, ele vai contar quantos itens tem dentro da caixa e vai dividir espaços na quantidade deles; dentro de cada espaço, fica o item centralizado;</li>
+            </ul>
+            <!--Coloca aqui o exemplo que usa esses valores para o justify-content-->>
         </article>
     </main>
 </body>
