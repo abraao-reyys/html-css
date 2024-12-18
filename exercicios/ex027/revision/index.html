@@ -293,6 +293,28 @@
                     <div>E</div>
                 </div>
             </div>
+            <h2>Aula 07 - Anatomia dos Itens Flexbox</h2>
+            <p>Dentro dos flex-container temos os flex-items; a propriedade de itens que vimos até agora é a <code>flex: auto;</code>.</p>
+            <p>A propriedade <code>order</code> recebe valores numéricos; ela organiza os itens os colocando em ordem, com base na numeração, de forma crescente.</p>
+            <p>A propriedade <code>align-self</code> se aplica aos itens e funciona no cross-axis; seu valores são:</p>
+            <ul>
+                <li><code>auto</code>: ele herda a característica de alinhamento do elemento pai;</li>
+                <li><code>flex-start</code>: fica grudado na parte de cima;</li>
+                <li><code>flex-end</code>: fica grudado na parte de baixo;</li>
+                <li><code>center</code>: fica centralizado;</li>
+                <li><code>stretch</code>: estica para fazer o preenchimento de todo cross-axis.</li>
+            </ul>
+            <p>Exemplos em ordem:</p>
+            <div class="exercicebox largeitems" style="align-items: center; justify-content: center;">
+                <div class="exerciceitem" style="width: 80%; height: 80%; align-items: center; justify-content: space-evenly;">
+                    <div style="align-self: auto;">A</div>
+                    <div style="align-self: flex-start;">B</div>
+                    <div style="align-self: flex-end;">C</div>
+                    <div style="align-self: center;">D</div>
+                    <div style="align-self: stretch;">E</div>
+                </div>
+            </div>
+            <h2>Aula 08 - Propriedade Flex-Basis em Flexbox</h2>
         </article>
     </main>
 </body>
