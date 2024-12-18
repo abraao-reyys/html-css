@@ -52,6 +52,12 @@ menu li {
     list-style-type: none;
 }
 
+menu li:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
 main {
     margin: 10px auto;
     padding: 20px;
@@ -97,12 +103,6 @@ main p {
     menu ul li {
         margin: 10px 0px;
         text-align: center;
-    }
-
-    menu ul li:hover {
-        color: black;
-        background-color: white;
-        cursor: pointer;
     }
 
     main {
