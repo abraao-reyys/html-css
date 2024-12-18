@@ -177,6 +177,50 @@
                     <div>C</div>
                 </div>
             </div>
+            <p>A propriedade <code>align-items</code> faz o alinhamento em relação ao cross-axis. Obs.: tem que aumentar a altura para ter a visualização.</p>
+            <ul>
+                <li>Valor <code>stretch</code> para esticar o elemento de forma que preencha toda a direção do cross-axis;</li>
+                <li>Valor <code>flex-start</code> para o primeiro item ficar grudado no cross-start;</li>
+                <li>Valor <code>flex-end</code> para o último item ficar grudado no cross-end;</li>
+                <li>Valor <code>center</code> para todos os itens ficarem centralizados de acordo com o cross-axis da caixa;</li>
+            </ul>
+            <p>Exemplos em ordem:</p>
+            <div class="exercicebox">
+                <div class="exerciceitem" style="align-items: stretch;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <div class="exerciceitem" style="align-items: flex-start;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <div class="exerciceitem" style="align-items: flex-end;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+                <div class="exerciceitem" style="align-items: center;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+            </div>
+            <h2>Aula 05 - Centralização Absoluta com Flexbox</h2>
+            <p>Para centralizar um elemento perfeitamento dentro de uma caixa basta atribuir a ela as propriedades e valores:</p>
+            <ul>
+                <li><code>justify-content: center;</code>, para alinhamento no main-axis;</li>
+                <li><code>align-items: center;</code>, para alinhamento no cross-axis;</li>
+            </ul>
+            <p>Confira um exemplo de centralização de caixas:</p>
+            <div class="exercicebox" style="justify-content: center; align-items: center;">
+                <div class="exerciceitem" style="align-items: center; justify-content: center;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                </div>
+            </div>
         </article>
     </main>
 </body>
