@@ -76,7 +76,7 @@ main p {
 @media screen and (max-width: 625px) {
     header {
         display: block;
-        height: 380px;
+        height: 390px;
     }
 
     header h1 {
