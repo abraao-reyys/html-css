@@ -29,6 +29,7 @@ header h1 {
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
 }
+
 header menu {
     margin-right: 10px;
 }
@@ -81,6 +82,10 @@ main p {
     header h1 {
         text-align: center;
         padding: 20px;
+    }
+
+    header menu {
+        margin-right: 0;
     }
 
     menu ul {
