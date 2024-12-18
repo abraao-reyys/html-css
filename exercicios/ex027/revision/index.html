@@ -315,6 +315,63 @@
                 </div>
             </div>
             <h2>Aula 08 - Propriedade Flex-Basis em Flexbox</h2>
+            <p>A propriedade <code>flex-basis</code> define o tamanho dos itens no seu eixo principal. Os valores possíveis são:</p>
+            <ul>
+                <li><code>auto</code>: irá deixar o tamanho de cada item com base no conteúdo que tem dentro dele;</li>
+                <li>#px: pode definir o tamanho em pixels;</li>
+            </ul>
+            <p>Há um detalhe: se tenho 3 elementos com o <code>flex-basis</code> definido por 100px, por exemplo, e o elemento pai não tem 300px ou mais, esses 100px não vão valer; o tamanho dos itens irão diminuir de forma igual para caber no elemento pai; o conteúdo dentro dos itens são apertados e, caso chegue ao limite e esteja definido com <code>nowrap</code>, ele irá quebrar para fora do elemento pai.</p>
+            <p>É por isso que não se pode confiar 1005 nesse tamanho base.</p>
+            <p>Exemplo na prática:</p>
+            <div class="exercicebox largeitems">
+                <div class="exerciceitem" style="flex-wrap: nowrap; align-items: flex-start; width: 200px;">
+                    <div style="flex-basis: 100px;">A</div>
+                    <div style="flex-basis: 100px;">B</div>
+                    <div style="flex-basis: 100px;">C</div>
+                </div>
+                <div class="exerciceitem" style="flex-wrap: nowrap; align-items: flex-start; width: 100px;">
+                    <div style="flex-basis: 100px;">A</div>
+                    <div style="flex-basis: 100px;">B</div>
+                    <div style="flex-basis: 100px;">C</div>
+                </div>
+            </div>
+            <p>Nesse exemplo, cada item está com um <code>flex-basis: 100px;</code>, o que daria 300px no total para cabê-los. Contudo, a caixa só possui 200px de largura. Como foi dito, os itens irão reduzir seu tamanho para ficar na caixa.</p>
+            <p>No segundo caso do exemplo, cada item está com o mesmo <code>flex-basis</code>. A diferença é que a caixa pai foi reduzida de tamanho, passando de 200px para 100px. Isso fez com que o conteúdo dentro de cada item fosse espremido além do limite, fazendo com que eles quebrassem para fora da caixa.</p>
+            <h2>Aula 09 - Controle do Tamanho de Itens Flexíveis</h2>
+            <p>A propriedade <code>flex-shrink</code> e <code>flex-grow</code> tratam-se, respectivamente, de se pode encolher e crescer os itens.</p>
+            <p>Os valores padrões são: <code>flex-shrink: 1;</code> e <code>flex-grow: 0;</code>.</p>
+            <p>Essas propriedades podem assumir valores diferentes. Por exemplo: se o <code>flex-grow</code> de um item for 1 e o de outro item for 2, e eles pertencerem a mesma caixa, quando a caixa for ampliada, o que tem 2 como valor vai crescer o dobro do tamanho da 1, isso porque o espaço de crescimento é <strong>proporcional</strong> com base nesses valores.</p>
+            <p>Colocar um <code>flex-grow: 2;</code> em um elemento e <code>flex-grow: 1;</code> em outro, eles vão sei comportar da mesma forma se os valores fossem 1 e 2, respectivamente, pois é proporcional da mesma forma.</p>
+            <p>Exemplo na prática:</p>
+            <div class="exercicebox largeitems">
+                <div class="exerciceitem" style="flex-wrap: nowrap; align-items: flex-start; width: 50%;">
+                    <div style="flex-grow: 0; flex-shrink: 1;">A</div>
+                    <div style="flex-grow: 0; flex-shrink: 1;">B</div>
+                    <div style="flex-grow: 0; flex-shrink: 1;">C</div>
+                </div>
+                <div class="exerciceitem" style="flex-wrap: nowrap; align-items: flex-start; width: 50%">
+                    <div style="flex-grow: 1; flex-shrink: 0;">A</div>
+                    <div style="flex-grow: 1; flex-shrink: 0;">B</div>
+                    <div style="flex-grow: 1; flex-shrink: 0;">C</div>
+                </div>
+                <div class="exerciceitem" style="flex-wrap: nowrap; align-items: flex-start; width: 50%;">
+                    <div style="flex-grow: 1; flex-shrink: 1;">A</div>
+                    <div style="flex-grow: 1; flex-shrink: 1;">B</div>
+                    <div style="flex-grow: 1; flex-shrink: 1;">C</div>
+                </div>
+                <div class="exerciceitem" style="flex-wrap: nowrap; align-items: flex-start; width: 50%">
+                    <div style="flex-grow: 0; flex-shrink: 0;">A</div>
+                    <div style="flex-grow: 0; flex-shrink: 0;">B</div>
+                    <div style="flex-grow: 0; flex-shrink: 0;">C</div>
+                </div>
+            </div>
+            <h2>Aula 10 - A Propriedade Flex</h2>
+            <p>A propriedade <code>flex</code> é um shorthand.</p>
+            <p><code>flex: [flex-grow] + [flex-shrink] + [flex-basis]</code></p>
+            <p>Existe ainda uma simplificação ainda maior do shorthand <code>flex</code> em algumas situações. Por exemplo, quando temos o <code>flex: 0 1 auto;</code>, nós sabemos que esses são os valores padrão para esses propriedades; então não precisamos declará-los, se for desejo, podemos declarar como <code>flex: initial;</code>.</p>
+            <p>Quando temos um <code>flex: 0 0 auto;</code>, vemos que ele não é nada flexível; podemos então substituir isso por <code>flex: none;</code>.</p>
+            <p>Quando temos um <code>flex: 1 1 auto;</code>, vemos que ele é totalmente flexível; podemos então substituir isso por <code>flex: auto;</code>.</p>
+            <p>Se eu colocar <code>flex: 3;</code>, esse número vale para o grow; o shrink ficará com o valor padrão, ou seja, 1; no caso, ficaria na sua forma normal: <code>flex: 3 1 auto;</code>.</p>
         </article>
     </main>
 </body>
