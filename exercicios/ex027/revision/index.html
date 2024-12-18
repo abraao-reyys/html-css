@@ -36,7 +36,6 @@
 
         .exerciceitem {
             display: flex;
-            align-items: flex-start;
             height: 150px;
             width: 25%;
             border: 1px solid black;
@@ -48,8 +47,16 @@
             border: 1px solid black;
         }
 
-        .largeitems div {
+        .largeitems div > div {
             padding: 15px;
+        }
+
+        .large1items div {
+            padding: 20px;
+        }
+
+        .startitems div {
+            align-items: flex-start;
         }
     </style>
 
@@ -74,7 +81,7 @@
                 <li><code>column-reverse</code>, onde os itens são colocados em coluna, de baixo para cima;</li>
             </ul>
             <p>Exemplos na prática:</p>
-            <div class="exercicebox">
+            <div class="exercicebox startitems">
                 <div class="exerciceitem" style="flex-direction: row;">
                     <div>A</div>
                     <div>B</div>
@@ -109,18 +116,18 @@
             <h2>Aula 03 - Empacotamento e Fluxo no Flexbox CSS</h2>
             <p>A propriedade <code>flex-wrap</code> é usada no elemento contêiner e serve para o encapsulamento dos itens.</p>
             <p>Vamos ver o que acontece por padrão quando usamos não definimos um <code>flex-wrap</code>, mas utilizamos o <code>flex-direction</code> como base:</p>
-            <div class="exercicebox">
-                <div class="exerciceitem largeitems" style="flex-wrap: nowrap; width: 30%;">
+            <div class="exercicebox startitems">
+                <div class="exerciceitem large1items" style="flex-wrap: nowrap; width: 30%;">
                     <div>A</div>
                     <div>B</div>
                     <div>C</div>
                 </div>
-                <div class="exerciceitem largeitems" style="flex-wrap: wrap; width: 30%;">
+                <div class="exerciceitem large1items" style="flex-wrap: wrap; width: 30%;">
                     <div>A</div>
                     <div>B</div>
                     <div>C</div>
                 </div>
-                <div class="exerciceitem largeitems" style="flex-wrap: wrap-reverse; width: 30%;">
+                <div class="exerciceitem large1items" style="flex-wrap: wrap-reverse; width: 30%;">
                     <div>A</div>
                     <div>B</div>
                     <div>C</div>
@@ -145,7 +152,7 @@
                 <li>Com o valor <code>space-around</code>, ele vai contar quantos itens tem dentro da caixa e vai dividir espaços na quantidade deles; dentro de cada espaço, fica o item centralizado;</li>
             </ul>
             <p>Exemplos em ordem:</p>
-            <div class="exercicebox">
+            <div class="exercicebox startitems">
                 <div class="exerciceitem" style="justify-content: flex-start;">
                     <div>A</div>
                     <div>B</div>
@@ -219,6 +226,71 @@
                     <div>A</div>
                     <div>B</div>
                     <div>C</div>
+                </div>
+            </div>
+            <h2>Aula 06 - Alinhamento de Elementos Empacotados no Flebox</h2>
+            <p>É utilizado no conteúdo que se 'quebra'.</p>
+            <p>A propriedade <code>align-content</code> é diferente da <code>align-items</code>; a segunda alinha elementos com base no cross-axis, enquanto a primeira alinha os elementos com base nos espaços que ficaram disponíveis e com base no cross-axis da caixa pai.</p>
+            <p>Ele funciona quando o <code>flex-wrap</code> está com o valor <code>wrap</code>, ou seja, para quebrar. Os valores que o <code>align-content</code> pode receber são:</p>
+            <ul>
+                <li><code>stretch</code>: ele pega a dimensão inteira e divide na quantidade de linhas, caso seja 'row', coloca cada linha em seus espaços e estica eles do start ao end do espaço que ele está;</li>
+                <li><code>flex-start</code>: ele fica grudado no início da parte; mas ele não tem as partes divididas, como no stretch; ele só deixa o espaço em branco embaixo;</li>
+                <li><code>flex-end</code>: ele fica grudado no final da parte; deixa a parte em branco encima;</li>
+                <li><code>center</code>: ele tem um espaço em branco em cima e embaixo de mesmo tamanho para que as linhas fiquem centralizadas;</li>
+                <li><code>space-between</code>: ele pega os primeiros elementos e coloca no cross-start e pega os últimos e deixa no cross-end; os outros elementos ficam divididos no meio;</li>
+                <li><code>space-evenly</code>: cria espaços em branco de mesmo tamanho ao lado de todos elementos;</li>
+                <li><code>space-around</code>: divide todo o eixo transversal na quantidade de linhas, coloca os elemetnos em cada um desses novos espaços e centraliza eles dentro desses espaços;</li>
+            </ul>
+            <p>Exemplos em ordem:</p>
+            <div class="exercicebox largeitems">
+                <div class="exerciceitem" style="flex-wrap: wrap; align-content: stretch;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
+                </div>
+                <div class="exerciceitem" style="flex-wrap: wrap; align-content: flex-start;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
+                </div>
+                <div class="exerciceitem" style="flex-wrap: wrap; align-content: flex-end;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
+                </div>
+                <div class="exerciceitem" style="flex-wrap: wrap; align-content: center;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
+                </div>
+                <div class="exerciceitem" style="flex-wrap: wrap; align-content: space-between;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
+                </div>
+                <div class="exerciceitem" style="flex-wrap: wrap; align-content: space-evenly;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
+                </div>
+                <div class="exerciceitem" style="flex-wrap: wrap; align-content: space-around;">
+                    <div>A</div>
+                    <div>B</div>
+                    <div>C</div>
+                    <div>D</div>
+                    <div>E</div>
                 </div>
             </div>
         </article>
