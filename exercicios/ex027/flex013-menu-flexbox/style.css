@@ -71,3 +71,36 @@ main p {
     margin-bottom: 8px;
     text-align: justify;
 }
+
+@media screen and (max-width: 625px) {
+    header {
+        display: block;
+        height: 380px;
+    }
+
+    header h1 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    menu ul {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+
+    menu ul li {
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    menu ul li:hover {
+        color: black;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    main {
+        width: 85%;
+    }
+}
